@@ -1,0 +1,49 @@
+.simulation-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.ticket-pool-card {
+  width: 100%;
+  max-width: 1000px;
+}
+.ticket-count-display {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+.ticket-count {
+  font-size: 48px;
+  font-weight: bold;
+  color: #363948;
+  background-color: #eeeeee;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+.simulation-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.vendors-section,
+.customers-section {
+  flex: 1;
+}
+table {
+  width: 100%;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}

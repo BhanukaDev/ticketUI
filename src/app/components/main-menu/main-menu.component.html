@@ -1,0 +1,57 @@
+<div class="menu-container">
+  <mat-card class="simulation-menu">
+    <mat-card-header>
+      <mat-card-title>Ticket Simulation System</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="menu-actions">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="startSimulation()"
+          [disabled]="simulationRunning"
+        >
+          Start Simulation
+        </button>
+        <button
+          mat-raised-button
+          color="warn"
+          (click)="stopSimulation()"
+          [disabled]="!simulationRunning"
+        >
+          Stop Simulation
+        </button>
+        <button
+          mat-stroked-button
+          (click)="editSimulation()"
+          [disabled]="simulationRunning"
+        >
+          Edit Simulation
+        </button>
+        <button mat-stroked-button (click)="viewSimulation()">
+          View Simulation
+        </button>
+        <button
+          mat-stroked-button
+          (click)="addCustomers()"
+          [disabled]="simulationRunning"
+        >
+          Add Customers
+        </button>
+        <button
+          mat-stroked-button
+          (click)="addVendors()"
+          [disabled]="simulationRunning"
+        >
+          Add Vendors
+        </button>
+      </div>
+      <div class="status-indicator">
+        Simulation Status:
+        <span [className]="simulationRunning ? 'running' : 'stopped'">
+          {{ simulationRunning ? "Running" : "Stopped" }}
+        </span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

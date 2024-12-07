@@ -1,0 +1,26 @@
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.simulation-menu {
+  width: 100%;
+  max-width: 400px;
+}
+.menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.status-indicator {
+  margin-top: 15px;
+  text-align: center;
+}
+.running {
+  color: green;
+}
+.stopped {
+  color: red;
+}
